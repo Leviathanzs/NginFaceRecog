@@ -1,0 +1,19 @@
+{
+    "executors": {
+        "executor_1": {
+            "first_embedding_number": 7884,
+            "last_embedding_number": 9197
+        },
+        "executor_2": {
+            "first_embedding_number": 9198,
+            "last_embedding_number": 10511
+        },
+        "executor_3": {
+            "first_embedding_number": 10512,
+            "last_embedding_number": 10518
+        }
+    },
+    "host": "172.16.13.216",
+    "port": "6379",
+    "worker_id": "worker_1"
+}

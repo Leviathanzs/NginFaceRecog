@@ -1,0 +1,28 @@
+05:07:42,645 root INFO 02/27/2025, 05:07:42.645379 Get RegisterUser Request
+05:07:42,645 root INFO Detect Face Using MTCNN is called.
+05:07:42,645 root INFO Hash Image is different
+05:07:42,819 root INFO MTCNN face detection time: 164.577269 miliseconds
+05:07:42,822 root INFO Face Detection time server: 177 milliseconds
+05:07:42,823 root INFO Face Detection time : 177 miliseconds
+05:07:42,823 root INFO Feature Extractor is called.
+05:07:43,75 root INFO Feature Extraction time: 252.106828 miliseconds
+05:07:43,75 root INFO All Service Feature Extractor time server: 253 milliseconds
+05:07:43,76 root INFO Feature Extractor time : 253 miliseconds
+05:07:43,76 root INFO 02/27/2025, 05:07:43.076428 Get IdentifyOne Request
+05:07:43,76 root INFO 🔍 Mencari executor dengan prefix: executor_pool-None
+05:07:43,77 root INFO ✅ Hasil dari Redis: []
+05:07:43,77 root INFO Raw Worker ID dari Redis: []
+05:07:43,77 root INFO Executor ID Setelah Parsing: []
+05:07:43,77 root INFO Executor ID: []
+05:07:43,77 root INFO Get All Executor time : 1 miliseconds
+05:07:43,78 root INFO Memory Usage Before Thread-Pool : 512.32421875 MB
+05:07:43,78 root ERROR IdentifyOne: Tidak ada hasil dari worker (RespPoll kosong).
+05:07:43,78 root INFO Confidence Score : 0.0
+05:07:43,78 root INFO Normal Registration
+05:07:43,78 grpc._server ERROR Exception calling application: registerUserMember() missing 2 required positional arguments: 'user_member_unique_id' and 'user_member_description'
+Traceback (most recent call last):
+  File "/home/dev/face-infran-spark/venv/lib/python3.10/site-packages/grpc/_server.py", line 552, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/home/dev/face-infran-spark/driver/driver_infran_service_async.py", line 538, in RegisterUser
+    memberInfo = DBQ.registerUserMember(dbh, request.TenantID, request.Name, request.Name, request.Password)
+TypeError: registerUserMember() missing 2 required positional arguments: 'user_member_unique_id' and 'user_member_description'

@@ -1,0 +1,81 @@
+05:59:54,480 root INFO 02/27/2025, 05:59:54.479980 Get RegisterUser Request
+05:59:54,480 root INFO Detect Face Using MTCNN is called.
+05:59:54,480 root INFO Hash Image is different
+05:59:54,652 root INFO MTCNN face detection time: 163.506693 miliseconds
+05:59:54,655 root INFO Face Detection time server: 175 milliseconds
+05:59:54,655 root INFO Face Detection time : 175 miliseconds
+05:59:54,655 root INFO Feature Extractor is called.
+05:59:54,893 root INFO Feature Extraction time: 237.443816 miliseconds
+05:59:54,893 root INFO All Service Feature Extractor time server: 238 milliseconds
+05:59:54,894 root INFO Feature Extractor time : 238 miliseconds
+05:59:54,894 root INFO 02/27/2025, 05:59:54.894497 Get IdentifyOne Request
+05:59:54,894 root INFO 🔍 Mencari executor di Redis dengan prefix: executor_pool-172.16.13.216-
+05:59:54,895 root INFO ✅ Raw Worker ID dari Redis: ['executor_pool-172.16.13.216-worker_1-executor_1-7884-9197', 'executor_pool-172.16.13.216-worker_1-executor_3-10512-10518', 'executor_pool-172.16.13.216-worker_1-executor_2-9198-10511']
+05:59:54,895 root INFO ✅ Executor ID Setelah Parsing: ['worker_1-executor_1-7884-9197', 'worker_1-executor_3-10512-10518', 'worker_1-executor_2-9198-10511']
+05:59:54,895 root INFO 🚀 Mengirim request ke 3 executor dengan ThreadPoolExecutor.
+05:59:54,899 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_3-10512-10518-e5759ab8-4a8d-4125-9f14-cb653d13493c', 'data': 1}
+05:59:54,899 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_1-7884-9197-e5759ab8-4a8d-4125-9f14-cb653d13493c', 'data': 1}
+05:59:54,900 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_2-9198-10511-e5759ab8-4a8d-4125-9f14-cb653d13493c', 'data': 1}
+05:59:54,904 root INFO Channel: b'worker_1-executor_1-7884-9197-e5759ab8-4a8d-4125-9f14-cb653d13493c' - Message Length: 10
+05:59:54,904 root INFO Channel: b'worker_1-executor_2-9198-10511-e5759ab8-4a8d-4125-9f14-cb653d13493c' - Message Length: 10
+05:59:54,904 root INFO Channel: b'worker_1-executor_3-10512-10518-e5759ab8-4a8d-4125-9f14-cb653d13493c' - Message Length: 10
+05:59:54,906 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_3-10512-10518-e5759ab8-4a8d-4125-9f14-cb653d13493c', 'data': 0}
+05:59:54,906 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_1-7884-9197-e5759ab8-4a8d-4125-9f14-cb653d13493c', 'data': 0}
+05:59:54,906 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_2-9198-10511-e5759ab8-4a8d-4125-9f14-cb653d13493c', 'data': 0}
+05:59:54,907 root INFO Confidence Score : 0.0
+05:59:54,907 root INFO Normal Registration
+05:59:54,909 grpc._server ERROR Exception calling application: duplicate key value violates unique constraint "user_member_musername_key"
+DETAIL:  Key (musername)=(oky) already exists.
+Traceback (most recent call last):
+  File "/home/dev/face-infran-spark/venv/lib/python3.10/site-packages/grpc/_server.py", line 552, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/home/dev/face-infran-spark/driver/driver_infran_service_async.py", line 525, in RegisterUser
+    memberInfo = DBQ.registerUserMember(dbh, request.TenantID, request.Name, request.Name, request.Password, request.UserID, request.Description)
+  File "/home/dev/face-infran-spark/driver/../infranlib/databases/database_query.py", line 10, in registerUserMember
+    rst = dbh.execute("INSERT INTO user_member (user_uuid, mname, musername, mpassword, unique_id, description)" +
+  File "/home/dev/face-infran-spark/driver/../infranlib/databases/postgres_handler.py", line 137, in execute
+    cursor.execute(query, params)
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "user_member_musername_key"
+DETAIL:  Key (musername)=(oky) already exists.
+
+06:03:52,80 root INFO 02/27/2025, 06:03:52.080226 Get RegisterUser Request
+06:03:52,81 root INFO Detect Face Using MTCNN is called.
+06:03:52,81 root INFO Hash Image is same
+06:03:52,81 root INFO Face Detection time server: 0 milliseconds
+06:03:52,81 root INFO Face Detection time : 0 miliseconds
+06:03:52,82 root INFO Feature Extractor is called.
+06:03:52,404 root INFO Feature Extraction time: 321.06843899999996 miliseconds
+06:03:52,404 root INFO All Service Feature Extractor time server: 323 milliseconds
+06:03:52,406 root INFO Feature Extractor time : 324 miliseconds
+06:03:52,406 root INFO 02/27/2025, 06:03:52.406849 Get IdentifyOne Request
+06:03:52,406 root INFO 🔍 Mencari executor di Redis dengan prefix: executor_pool-172.16.13.216-
+06:03:52,407 root INFO ✅ Raw Worker ID dari Redis: ['executor_pool-172.16.13.216-worker_1-executor_1-7884-9197', 'executor_pool-172.16.13.216-worker_1-executor_3-10512-10518', 'executor_pool-172.16.13.216-worker_1-executor_2-9198-10511']
+06:03:52,407 root INFO ✅ Executor ID Setelah Parsing: ['worker_1-executor_1-7884-9197', 'worker_1-executor_3-10512-10518', 'worker_1-executor_2-9198-10511']
+06:03:52,407 root INFO 🚀 Mengirim request ke 3 executor dengan ThreadPoolExecutor.
+06:03:52,413 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_1-7884-9197-53c7842a-03e9-442c-8d68-118983288065', 'data': 1}
+06:03:52,413 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_2-9198-10511-53c7842a-03e9-442c-8d68-118983288065', 'data': 1}
+06:03:52,413 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_3-10512-10518-53c7842a-03e9-442c-8d68-118983288065', 'data': 1}
+06:03:52,422 root INFO Channel: b'worker_1-executor_3-10512-10518-53c7842a-03e9-442c-8d68-118983288065' - Message Length: 10
+06:03:52,423 root INFO Channel: b'worker_1-executor_1-7884-9197-53c7842a-03e9-442c-8d68-118983288065' - Message Length: 10
+06:03:52,423 root INFO Channel: b'worker_1-executor_2-9198-10511-53c7842a-03e9-442c-8d68-118983288065' - Message Length: 10
+06:03:52,423 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_3-10512-10518-53c7842a-03e9-442c-8d68-118983288065', 'data': 0}
+06:03:52,426 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_1-7884-9197-53c7842a-03e9-442c-8d68-118983288065', 'data': 0}
+06:03:52,427 root INFO Confidence Score : 0.0
+06:03:52,427 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_2-9198-10511-53c7842a-03e9-442c-8d68-118983288065', 'data': 0}
+06:03:52,427 root INFO Normal Registration
+06:03:52,462 grpc._server ERROR Exception calling application: column "embedding_v" of relation "embeddings" does not exist
+LINE 2: ...mber_uuid, file_path, memory_tag, embedding_data, embedding_...
+                                                             ^
+Traceback (most recent call last):
+  File "/home/dev/face-infran-spark/venv/lib/python3.10/site-packages/grpc/_server.py", line 552, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/home/dev/face-infran-spark/driver/driver_infran_service_async.py", line 531, in RegisterUser
+    embeddingInfo = DBQ.saveEmbedding(dbh, request.TenantID, UserID, save_path, rkey, Embedding.dumps(), embedding_l.tolist())
+  File "/home/dev/face-infran-spark/driver/../infranlib/databases/database_query.py", line 32, in saveEmbedding
+    rst = dbh.execute("""
+  File "/home/dev/face-infran-spark/driver/../infranlib/databases/postgres_handler.py", line 137, in execute
+    cursor.execute(query, params)
+psycopg2.errors.UndefinedColumn: column "embedding_v" of relation "embeddings" does not exist
+LINE 2: ...mber_uuid, file_path, memory_tag, embedding_data, embedding_...
+                                                             ^
+

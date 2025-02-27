@@ -1,0 +1,87 @@
+06:16:36,938 root INFO 02/27/2025, 06:16:36.938221 Get IdentifyOne Request
+06:16:36,938 root INFO 🔍 Mencari executor di Redis dengan prefix: executor_pool-172.16.13.216-
+06:16:36,939 root INFO ✅ Raw Worker ID dari Redis: ['executor_pool-172.16.13.216-worker_1-executor_1-7884-9197', 'executor_pool-172.16.13.216-worker_1-executor_2-9198-10511']
+06:16:36,939 root INFO ✅ Executor ID Setelah Parsing: ['worker_1-executor_1-7884-9197', 'worker_1-executor_2-9198-10511']
+06:16:36,939 root INFO 🔍 Embedding kosong, melakukan Face Detection dan Feature Extraction.
+06:16:36,939 root INFO Detect Face Using MTCNN is called.
+06:16:36,939 root INFO Hash Image is different
+06:16:37,103 root INFO MTCNN face detection time: 154.833514 miliseconds
+06:16:37,106 root INFO Face Detection time server: 167 milliseconds
+06:16:37,106 root INFO ✅ Face Detection selesai dalam 167 miliseconds
+06:16:37,106 root INFO Feature Extractor is called.
+06:16:37,339 root INFO Feature Extraction time: 232.511879 miliseconds
+06:16:37,339 root INFO All Service Feature Extractor time server: 233 milliseconds
+06:16:37,339 root INFO ✅ Feature Extraction selesai dalam 233 miliseconds
+06:16:37,340 root INFO 🚀 Mengirim request ke 2 executor dengan ThreadPoolExecutor.
+06:16:37,343 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_1-7884-9197-d51ab447-2af1-4289-8dfd-6b57f0307b45', 'data': 1}
+06:16:37,344 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_2-9198-10511-d51ab447-2af1-4289-8dfd-6b57f0307b45', 'data': 1}
+06:16:37,354 root INFO Channel: b'worker_1-executor_2-9198-10511-d51ab447-2af1-4289-8dfd-6b57f0307b45' - Message Length: 10
+06:16:37,354 root INFO Channel: b'worker_1-executor_1-7884-9197-d51ab447-2af1-4289-8dfd-6b57f0307b45' - Message Length: 10
+06:16:37,356 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_1-7884-9197-d51ab447-2af1-4289-8dfd-6b57f0307b45', 'data': 0}
+06:16:37,357 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_2-9198-10511-d51ab447-2af1-4289-8dfd-6b57f0307b45', 'data': 0}
+06:16:51,387 root INFO 02/27/2025, 06:16:51.387705 Get IdentifyOne Request
+06:16:51,388 root INFO 🔍 Mencari executor di Redis dengan prefix: executor_pool-172.16.13.216-
+06:16:51,388 root INFO ✅ Raw Worker ID dari Redis: ['executor_pool-172.16.13.216-worker_1-executor_1-7884-9197', 'executor_pool-172.16.13.216-worker_1-executor_3-10512-10518', 'executor_pool-172.16.13.216-worker_1-executor_2-9198-10511']
+06:16:51,388 root INFO ✅ Executor ID Setelah Parsing: ['worker_1-executor_1-7884-9197', 'worker_1-executor_3-10512-10518', 'worker_1-executor_2-9198-10511']
+06:16:51,388 root INFO 🔍 Embedding kosong, melakukan Face Detection dan Feature Extraction.
+06:16:51,388 root INFO Detect Face Using MTCNN is called.
+06:16:51,388 root INFO Hash Image is same
+06:16:51,389 root INFO Face Detection time server: 0 milliseconds
+06:16:51,389 root INFO ✅ Face Detection selesai dalam 0 miliseconds
+06:16:51,389 root INFO Feature Extractor is called.
+06:16:51,592 root INFO Feature Extraction time: 202.89966900000002 miliseconds
+06:16:51,592 root INFO All Service Feature Extractor time server: 204 milliseconds
+06:16:51,593 root INFO ✅ Feature Extraction selesai dalam 204 miliseconds
+06:16:51,593 root INFO 🚀 Mengirim request ke 3 executor dengan ThreadPoolExecutor.
+06:16:51,595 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_2-9198-10511-250cbc46-3a61-4911-841c-7a152309e85e', 'data': 1}
+06:16:51,597 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_1-7884-9197-250cbc46-3a61-4911-841c-7a152309e85e', 'data': 1}
+06:16:51,598 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_3-10512-10518-250cbc46-3a61-4911-841c-7a152309e85e', 'data': 1}
+06:16:51,600 root INFO Channel: b'worker_1-executor_2-9198-10511-250cbc46-3a61-4911-841c-7a152309e85e' - Message Length: 10
+06:16:51,601 root INFO Channel: b'worker_1-executor_1-7884-9197-250cbc46-3a61-4911-841c-7a152309e85e' - Message Length: 10
+06:16:51,603 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_2-9198-10511-250cbc46-3a61-4911-841c-7a152309e85e', 'data': 0}
+06:16:51,603 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_1-7884-9197-250cbc46-3a61-4911-841c-7a152309e85e', 'data': 0}
+06:16:51,607 root INFO Channel: b'worker_1-executor_3-10512-10518-250cbc46-3a61-4911-841c-7a152309e85e' - Message Length: 10
+06:16:51,607 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_3-10512-10518-250cbc46-3a61-4911-841c-7a152309e85e', 'data': 0}
+06:17:08,521 root INFO 02/27/2025, 06:17:08.521433 Get RegisterUser Request
+06:17:08,521 root INFO Detect Face Using MTCNN is called.
+06:17:08,521 root INFO Hash Image is same
+06:17:08,521 root INFO Face Detection time server: 0 milliseconds
+06:17:08,522 root INFO Face Detection time : 0 miliseconds
+06:17:08,522 root INFO Feature Extractor is called.
+06:17:08,734 root INFO Feature Extraction time: 211.86730400000002 miliseconds
+06:17:08,734 root INFO All Service Feature Extractor time server: 213 milliseconds
+06:17:08,735 root INFO Feature Extractor time : 214 miliseconds
+06:17:08,736 root INFO 02/27/2025, 06:17:08.736132 Get IdentifyOne Request
+06:17:08,736 root INFO 🔍 Mencari executor di Redis dengan prefix: executor_pool-172.16.13.216-
+06:17:08,737 root INFO ✅ Raw Worker ID dari Redis: ['executor_pool-172.16.13.216-worker_1-executor_1-7884-9197', 'executor_pool-172.16.13.216-worker_1-executor_3-10512-10518', 'executor_pool-172.16.13.216-worker_1-executor_2-9198-10511']
+06:17:08,737 root INFO ✅ Executor ID Setelah Parsing: ['worker_1-executor_1-7884-9197', 'worker_1-executor_3-10512-10518', 'worker_1-executor_2-9198-10511']
+06:17:08,737 root INFO 🚀 Mengirim request ke 3 executor dengan ThreadPoolExecutor.
+06:17:08,740 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_1-7884-9197-7eaee4af-8c66-485f-a087-5b382abe964b', 'data': 1}
+06:17:08,741 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_2-9198-10511-7eaee4af-8c66-485f-a087-5b382abe964b', 'data': 1}
+06:17:08,741 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_3-10512-10518-7eaee4af-8c66-485f-a087-5b382abe964b', 'data': 1}
+06:17:08,745 root INFO Channel: b'worker_1-executor_1-7884-9197-7eaee4af-8c66-485f-a087-5b382abe964b' - Message Length: 10
+06:17:08,745 root INFO Channel: b'worker_1-executor_3-10512-10518-7eaee4af-8c66-485f-a087-5b382abe964b' - Message Length: 10
+06:17:08,745 root INFO Channel: b'worker_1-executor_2-9198-10511-7eaee4af-8c66-485f-a087-5b382abe964b' - Message Length: 10
+06:17:08,747 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_1-7884-9197-7eaee4af-8c66-485f-a087-5b382abe964b', 'data': 0}
+06:17:08,747 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_2-9198-10511-7eaee4af-8c66-485f-a087-5b382abe964b', 'data': 0}
+06:17:08,748 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_3-10512-10518-7eaee4af-8c66-485f-a087-5b382abe964b', 'data': 0}
+06:17:08,748 root INFO Confidence Score : 0.0
+06:17:08,749 root INFO Normal Registration
+06:17:08,774 grpc._server ERROR Exception calling application: column "embedding_v" is of type bytea but expression is of type numeric[]
+LINE 3: ...c3bbc2a63f71116805867112527113747114622e'::bytea, ARRAY[ -0....
+                                                             ^
+HINT:  You will need to rewrite or cast the expression.
+Traceback (most recent call last):
+  File "/home/dev/face-infran-spark/venv/lib/python3.10/site-packages/grpc/_server.py", line 552, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/home/dev/face-infran-spark/driver/driver_infran_service_async.py", line 531, in RegisterUser
+    embeddingInfo = DBQ.saveEmbedding(dbh, request.TenantID, UserID, save_path, rkey, Embedding.dumps(), embedding_l.tolist())
+  File "/home/dev/face-infran-spark/driver/../infranlib/databases/database_query.py", line 32, in saveEmbedding
+    rst = dbh.execute("""
+  File "/home/dev/face-infran-spark/driver/../infranlib/databases/postgres_handler.py", line 137, in execute
+    cursor.execute(query, params)
+psycopg2.errors.DatatypeMismatch: column "embedding_v" is of type bytea but expression is of type numeric[]
+LINE 3: ...c3bbc2a63f71116805867112527113747114622e'::bytea, ARRAY[ -0....
+                                                             ^
+HINT:  You will need to rewrite or cast the expression.
+

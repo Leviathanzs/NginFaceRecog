@@ -1,0 +1,60 @@
+02:26:42,170 root INFO 02/27/2025, 02:26:42.170252 Get verifyById Request
+02:26:42,170 root INFO Detect Face Using MTCNN is called.
+02:26:42,170 root INFO Hash Image is different
+02:26:42,362 root INFO MTCNN face detection time: 181.71262299999998 miliseconds
+02:26:42,367 root INFO Face Detection time server: 196 milliseconds
+02:26:42,367 root INFO Feature Extractor is called.
+02:26:42,596 root INFO Feature Extraction time: 229.08978199999999 miliseconds
+02:26:42,596 root INFO All Service Feature Extractor time server: 230 milliseconds
+02:26:42,600 grpc._server ERROR Exception calling application: list index out of range
+Traceback (most recent call last):
+  File "/home/dev/face-infran-spark/venv/lib/python3.10/site-packages/grpc/_server.py", line 552, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/home/dev/face-infran-spark/driver/driver_infran_service_async.py", line 120, in VerifyById
+    embedding_data_value = embedding_data[0]
+IndexError: list index out of range
+02:29:03,401 root INFO 02/27/2025, 02:29:03.401320 Get verifyByImage Request
+02:29:03,402 root INFO Detect Face Using MTCNN is called.
+02:29:03,402 root INFO Hash Image is same
+02:29:03,402 root INFO Face Detection time server: 0 milliseconds
+02:29:03,402 root INFO Detect Face Using MTCNN is called.
+02:29:03,402 root INFO Hash Image is same
+02:29:03,402 root INFO Face Detection time server: 0 milliseconds
+02:29:03,402 root INFO Feature Extractor is called.
+02:29:03,665 root INFO Feature Extraction time: 261.681419 miliseconds
+02:29:03,666 root INFO All Service Feature Extractor time server: 263 milliseconds
+02:29:03,666 root INFO Feature Extractor is called.
+02:29:03,900 root INFO Feature Extraction time: 233.642044 miliseconds
+02:29:03,901 root INFO All Service Feature Extractor time server: 234 milliseconds
+03:42:07,703 root INFO 02/27/2025, 03:42:07.703444 Get RegisterUser Request
+03:42:07,704 grpc._server ERROR Exception calling application: Nik
+Traceback (most recent call last):
+  File "/home/dev/face-infran-spark/venv/lib/python3.10/site-packages/grpc/_server.py", line 552, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/home/dev/face-infran-spark/driver/driver_infran_service_async.py", line 483, in RegisterUser
+    # Nik = request.Nik if request.Nik and request.Nik.strip() != "" else None
+AttributeError: Nik
+03:45:37,494 root INFO 02/27/2025, 03:45:37.494413 Get RegisterUser Request
+03:45:37,494 grpc._server ERROR Exception calling application: Nik
+Traceback (most recent call last):
+  File "/home/dev/face-infran-spark/venv/lib/python3.10/site-packages/grpc/_server.py", line 552, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/home/dev/face-infran-spark/driver/driver_infran_service_async.py", line 483, in RegisterUser
+    # Nik = request.Nik if request.Nik and request.Nik.strip() != "" else None
+AttributeError: Nik
+03:47:02,565 root INFO 02/27/2025, 03:47:02.564523 Get RegisterUser Request
+03:47:02,565 grpc._server ERROR Exception calling application: Nik
+Traceback (most recent call last):
+  File "/home/dev/face-infran-spark/venv/lib/python3.10/site-packages/grpc/_server.py", line 552, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/home/dev/face-infran-spark/driver/driver_infran_service_async.py", line 483, in RegisterUser
+    FaceDetector = 0
+AttributeError: Nik
+03:50:07,635 root INFO 02/27/2025, 03:50:07.635496 Get RegisterUser Request
+03:50:07,636 grpc._server ERROR Exception calling application: Nik
+Traceback (most recent call last):
+  File "/home/dev/face-infran-spark/venv/lib/python3.10/site-packages/grpc/_server.py", line 552, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/home/dev/face-infran-spark/driver/driver_infran_service_async.py", line 483, in RegisterUser
+    FaceDetector = 0
+AttributeError: Nik

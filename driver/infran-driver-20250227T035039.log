@@ -1,0 +1,67 @@
+03:50:45,475 root INFO 02/27/2025, 03:50:45.475184 Get RegisterUser Request
+03:50:45,475 root INFO Detect Face Using MTCNN is called.
+03:50:45,475 root INFO Hash Image is different
+03:50:45,672 root INFO MTCNN face detection time: 183.197203 miliseconds
+03:50:45,675 root INFO Face Detection time server: 200 milliseconds
+03:50:45,676 root INFO Face Detection time : 200 miliseconds
+03:50:45,676 root INFO Feature Extractor is called.
+03:50:45,943 root INFO Feature Extraction time: 267.435562 miliseconds
+03:50:45,944 root INFO All Service Feature Extractor time server: 268 milliseconds
+03:50:45,944 root INFO Feature Extractor time : 268 miliseconds
+03:50:45,944 root INFO 02/27/2025, 03:50:45.944804 Get IdentifyOne Request
+03:50:45,945 root INFO Executor ID: []
+03:50:45,945 root INFO Get All Executor time : 1 miliseconds
+03:50:45,946 root INFO Memory Usage Before Thread-Pool : 511.55078125 MB
+03:50:45,946 grpc._server ERROR Exception calling application: max() arg is an empty sequence
+Traceback (most recent call last):
+  File "/home/dev/face-infran-spark/venv/lib/python3.10/site-packages/grpc/_server.py", line 552, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/home/dev/face-infran-spark/driver/driver_infran_service_async.py", line 511, in RegisterUser
+    resp_identify = self.IdentifyOne(infrandriver_pb2.IdentifyOneRequest(TrxID=TrxID, TenantID=request.TenantID,
+  File "/home/dev/face-infran-spark/driver/driver_infran_service_async.py", line 259, in IdentifyOne
+    max_val = max(max_val_list)
+ValueError: max() arg is an empty sequence
+03:53:05,946 root INFO 02/27/2025, 03:53:05.946856 Get RegisterUser Request
+03:53:05,947 root INFO Detect Face Using MTCNN is called.
+03:53:05,947 root INFO Hash Image is same
+03:53:05,947 root INFO Face Detection time server: 0 milliseconds
+03:53:05,947 root INFO Face Detection time : 0 miliseconds
+03:53:05,947 root INFO Feature Extractor is called.
+03:53:06,173 root INFO Feature Extraction time: 225.910883 miliseconds
+03:53:06,174 root INFO All Service Feature Extractor time server: 227 milliseconds
+03:53:06,174 root INFO Feature Extractor time : 227 miliseconds
+03:53:06,175 root INFO 02/27/2025, 03:53:06.175087 Get IdentifyOne Request
+03:53:06,176 root INFO Executor ID: []
+03:53:06,176 root INFO Get All Executor time : 1 miliseconds
+03:53:06,176 root INFO Memory Usage Before Thread-Pool : 516.1015625 MB
+03:53:06,176 grpc._server ERROR Exception calling application: max() arg is an empty sequence
+Traceback (most recent call last):
+  File "/home/dev/face-infran-spark/venv/lib/python3.10/site-packages/grpc/_server.py", line 552, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/home/dev/face-infran-spark/driver/driver_infran_service_async.py", line 511, in RegisterUser
+    resp_identify = self.IdentifyOne(infrandriver_pb2.IdentifyOneRequest(TrxID=TrxID, TenantID=request.TenantID,
+  File "/home/dev/face-infran-spark/driver/driver_infran_service_async.py", line 259, in IdentifyOne
+    max_val = max(max_val_list)
+ValueError: max() arg is an empty sequence
+03:59:57,310 root INFO 02/27/2025, 03:59:57.309977 Get RegisterUser Request
+03:59:57,311 root INFO Detect Face Using MTCNN is called.
+03:59:57,312 root INFO Hash Image is same
+03:59:57,312 root INFO Face Detection time server: 0 milliseconds
+03:59:57,312 root INFO Face Detection time : 0 miliseconds
+03:59:57,312 root INFO Feature Extractor is called.
+03:59:57,586 root INFO Feature Extraction time: 272.463438 miliseconds
+03:59:57,587 root INFO All Service Feature Extractor time server: 275 milliseconds
+03:59:57,590 root INFO Feature Extractor time : 278 miliseconds
+03:59:57,590 root INFO 02/27/2025, 03:59:57.590884 Get IdentifyOne Request
+03:59:57,592 root INFO Executor ID: []
+03:59:57,592 root INFO Get All Executor time : 1 miliseconds
+03:59:57,592 root INFO Memory Usage Before Thread-Pool : 516.1015625 MB
+03:59:57,593 grpc._server ERROR Exception calling application: max() arg is an empty sequence
+Traceback (most recent call last):
+  File "/home/dev/face-infran-spark/venv/lib/python3.10/site-packages/grpc/_server.py", line 552, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/home/dev/face-infran-spark/driver/driver_infran_service_async.py", line 511, in RegisterUser
+    ###-----------------Get Feature Extraction-----------------###
+  File "/home/dev/face-infran-spark/driver/driver_infran_service_async.py", line 259, in IdentifyOne
+    context.set_code(grpc.StatusCode.NOT_FOUND)
+ValueError: max() arg is an empty sequence

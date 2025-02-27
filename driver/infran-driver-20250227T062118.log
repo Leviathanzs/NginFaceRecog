@@ -1,0 +1,189 @@
+06:21:20,191 root INFO 02/27/2025, 06:21:20.191011 Get RegisterUser Request
+06:21:20,191 root INFO Detect Face Using MTCNN is called.
+06:21:20,191 root INFO Hash Image is different
+06:21:20,367 root INFO MTCNN face detection time: 166.470461 miliseconds
+06:21:20,370 root INFO Face Detection time server: 179 milliseconds
+06:21:20,370 root INFO Face Detection time : 179 miliseconds
+06:21:20,370 root INFO Feature Extractor is called.
+06:21:20,618 root INFO Feature Extraction time: 247.858308 miliseconds
+06:21:20,619 root INFO All Service Feature Extractor time server: 248 milliseconds
+06:21:20,619 root INFO Feature Extractor time : 249 miliseconds
+06:21:20,619 root INFO 02/27/2025, 06:21:20.619781 Get IdentifyOne Request
+06:21:20,619 root INFO 🔍 Mencari executor di Redis dengan prefix: executor_pool-172.16.13.216-
+06:21:20,620 root INFO ✅ Raw Worker ID dari Redis: ['executor_pool-172.16.13.216-worker_1-executor_1-7884-9197', 'executor_pool-172.16.13.216-worker_1-executor_2-9198-10511']
+06:21:20,620 root INFO ✅ Executor ID Setelah Parsing: ['worker_1-executor_1-7884-9197', 'worker_1-executor_2-9198-10511']
+06:21:20,620 root INFO 🚀 Mengirim request ke 2 executor dengan ThreadPoolExecutor.
+06:21:20,624 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_2-9198-10511-7b5ada79-4aae-4492-95c5-73263bd1c8f5', 'data': 1}
+06:21:20,624 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_1-7884-9197-7b5ada79-4aae-4492-95c5-73263bd1c8f5', 'data': 1}
+06:21:20,632 root INFO Channel: b'worker_1-executor_1-7884-9197-7b5ada79-4aae-4492-95c5-73263bd1c8f5' - Message Length: 10
+06:21:20,633 root INFO Channel: b'worker_1-executor_2-9198-10511-7b5ada79-4aae-4492-95c5-73263bd1c8f5' - Message Length: 10
+06:21:20,634 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_1-7884-9197-7b5ada79-4aae-4492-95c5-73263bd1c8f5', 'data': 0}
+06:21:20,636 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_2-9198-10511-7b5ada79-4aae-4492-95c5-73263bd1c8f5', 'data': 0}
+06:21:20,636 root INFO Confidence Score : 0.0
+06:21:20,637 root INFO Normal Registration
+06:21:20,647 root INFO Registered to Databases 5fbbbd0b-34db-43e0-8a21-a4fb1e11bae8#d63768af-813d-40f3-b7af-c9e68e26ddaf#c9484ebc-bcda-4312-852d-98474ae85064
+06:21:20,648 root INFO Registered to Redis 5fbbbd0b-34db-43e0-8a21-a4fb1e11bae8#d63768af-813d-40f3-b7af-c9e68e26ddaf#c9484ebc-bcda-4312-852d-98474ae85064
+06:21:20,649 root INFO Executor ID: worker_1-executor_2-9198-10511
+06:21:20,650 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_2-9198-10511-7b5ada79-4aae-4492-95c5-73263bd1c8f5', 'data': 1}
+06:21:20,656 root INFO Channel: b'worker_1-executor_2-9198-10511-7b5ada79-4aae-4492-95c5-73263bd1c8f5' - Message Length: 8
+06:21:20,657 root INFO Register Response Executor: {'TrxID': '7b5ada79-4aae-4492-95c5-73263bd1c8f5', 'ExecutorID': 'worker_1-executor_2-9198-10511', 'Message': 'Done Register', 'Result': 'Get response from executor', 'ErrCode': 0, 'Status': 'Get response from executor', 'EmbeddingID': '5fbbbd0b-34db-43e0-8a21-a4fb1e11bae8#d63768af-813d-40f3-b7af-c9e68e26ddaf#c9484ebc-bcda-4312-852d-98474ae85064', 'Timestamp': '02/27/2025, 06:21:20'}
+06:21:20,657 root INFO Registered to Executor
+06:21:20,657 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_2-9198-10511-7b5ada79-4aae-4492-95c5-73263bd1c8f5', 'data': 0}
+06:21:20,657 root INFO Register to Executor time : 20 miliseconds
+06:21:20,657 root INFO 02/27/2025, 06:21:20.657598 RegisterFace Request Finished
+
+06:21:20,657 root INFO ------------------------------------------------------------------------------
+06:21:20,657 root INFO 
+
+06:21:20,660 root INFO 02/27/2025, 06:21:20.660351 Get RegisterUser Request
+06:21:20,660 root INFO Detect Face Using MTCNN is called.
+06:21:20,660 root INFO Hash Image is same
+06:21:20,660 root INFO Face Detection time server: 0 milliseconds
+06:21:20,660 root INFO Face Detection time : 0 miliseconds
+06:21:20,660 root INFO Feature Extractor is called.
+06:21:20,873 root INFO Feature Extraction time: 212.260608 miliseconds
+06:21:20,873 root INFO All Service Feature Extractor time server: 213 milliseconds
+06:21:20,874 root INFO Feature Extractor time : 213 miliseconds
+06:21:20,874 root INFO 02/27/2025, 06:21:20.874480 Get IdentifyOne Request
+06:21:20,874 root INFO 🔍 Mencari executor di Redis dengan prefix: executor_pool-172.16.13.216-
+06:21:20,875 root INFO ✅ Raw Worker ID dari Redis: ['executor_pool-172.16.13.216-worker_1-executor_1-7884-9197', 'executor_pool-172.16.13.216-worker_1-executor_3-10512-10518', 'executor_pool-172.16.13.216-worker_1-executor_2-9198-10511']
+06:21:20,875 root INFO ✅ Executor ID Setelah Parsing: ['worker_1-executor_1-7884-9197', 'worker_1-executor_3-10512-10518', 'worker_1-executor_2-9198-10511']
+06:21:20,875 root INFO 🚀 Mengirim request ke 3 executor dengan ThreadPoolExecutor.
+06:21:20,878 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_2-9198-10511-7b5ada79-4aae-4492-95c5-73263bd1c8f5', 'data': 1}
+06:21:20,878 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_3-10512-10518-7b5ada79-4aae-4492-95c5-73263bd1c8f5', 'data': 1}
+06:21:20,879 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_1-7884-9197-7b5ada79-4aae-4492-95c5-73263bd1c8f5', 'data': 1}
+06:21:20,883 root INFO Channel: b'worker_1-executor_2-9198-10511-7b5ada79-4aae-4492-95c5-73263bd1c8f5' - Message Length: 10
+06:21:20,884 root INFO Channel: b'worker_1-executor_1-7884-9197-7b5ada79-4aae-4492-95c5-73263bd1c8f5' - Message Length: 10
+06:21:20,884 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_2-9198-10511-7b5ada79-4aae-4492-95c5-73263bd1c8f5', 'data': 0}
+06:21:20,886 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_1-7884-9197-7b5ada79-4aae-4492-95c5-73263bd1c8f5', 'data': 0}
+06:21:20,887 root INFO Channel: b'worker_1-executor_3-10512-10518-7b5ada79-4aae-4492-95c5-73263bd1c8f5' - Message Length: 10
+06:21:20,889 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_3-10512-10518-7b5ada79-4aae-4492-95c5-73263bd1c8f5', 'data': 0}
+06:21:20,889 root INFO Confidence Score : 1.0
+06:21:20,889 root INFO Fallback Registration
+06:21:20,890 root INFO Registered to Executor
+06:21:20,890 root INFO Register to Executor time : 1 miliseconds
+06:21:20,890 root INFO 02/27/2025, 06:21:20.890425 RegisterFace Request Finished
+
+06:21:20,890 root INFO ------------------------------------------------------------------------------
+06:21:20,890 root INFO 
+
+06:21:53,981 root INFO 02/27/2025, 06:21:53.980843 Get IdentifyOne Request
+06:21:53,981 root INFO 🔍 Mencari executor di Redis dengan prefix: executor_pool-172.16.13.216-
+06:21:53,982 root INFO ✅ Raw Worker ID dari Redis: ['executor_pool-172.16.13.216-worker_1-executor_1-7884-9197', 'executor_pool-172.16.13.216-worker_1-executor_3-10512-10518', 'executor_pool-172.16.13.216-worker_1-executor_2-9198-10511']
+06:21:53,982 root INFO ✅ Executor ID Setelah Parsing: ['worker_1-executor_1-7884-9197', 'worker_1-executor_3-10512-10518', 'worker_1-executor_2-9198-10511']
+06:21:53,982 root INFO 🔍 Embedding kosong, melakukan Face Detection dan Feature Extraction.
+06:21:53,982 root INFO Detect Face Using MTCNN is called.
+06:21:53,982 root INFO Hash Image is same
+06:21:53,982 root INFO Face Detection time server: 0 milliseconds
+06:21:53,982 root INFO ✅ Face Detection selesai dalam 0 miliseconds
+06:21:53,982 root INFO Feature Extractor is called.
+06:21:54,204 root INFO Feature Extraction time: 221.593292 miliseconds
+06:21:54,204 root INFO All Service Feature Extractor time server: 222 milliseconds
+06:21:54,205 root INFO ✅ Feature Extraction selesai dalam 222 miliseconds
+06:21:54,205 root INFO 🚀 Mengirim request ke 3 executor dengan ThreadPoolExecutor.
+06:21:54,208 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_2-9198-10511-1341303f-6c53-4301-86a8-132d3a4c137d', 'data': 1}
+06:21:54,209 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_1-7884-9197-1341303f-6c53-4301-86a8-132d3a4c137d', 'data': 1}
+06:21:54,210 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_3-10512-10518-1341303f-6c53-4301-86a8-132d3a4c137d', 'data': 1}
+06:22:04,484 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_1-7884-9197-1341303f-6c53-4301-86a8-132d3a4c137d', 'data': 0}
+06:22:04,487 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_2-9198-10511-1341303f-6c53-4301-86a8-132d3a4c137d', 'data': 0}
+06:22:04,504 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_3-10512-10518-1341303f-6c53-4301-86a8-132d3a4c137d', 'data': 0}
+06:24:40,58 root INFO 02/27/2025, 06:24:40.058599 Get IdentifyOne Request
+06:24:40,58 root INFO 🔍 Mencari executor di Redis dengan prefix: executor_pool-172.16.13.216-
+06:24:40,59 root INFO ✅ Raw Worker ID dari Redis: ['executor_pool-172.16.13.216-worker_1-executor_1-7884-9197', 'executor_pool-172.16.13.216-worker_1-executor_3-10512-10518', 'executor_pool-172.16.13.216-worker_1-executor_2-9198-10511']
+06:24:40,59 root INFO ✅ Executor ID Setelah Parsing: ['worker_1-executor_1-7884-9197', 'worker_1-executor_3-10512-10518', 'worker_1-executor_2-9198-10511']
+06:24:40,59 root INFO 🔍 Embedding kosong, melakukan Face Detection dan Feature Extraction.
+06:24:40,59 root INFO Detect Face Using MTCNN is called.
+06:24:40,59 root INFO Hash Image is same
+06:24:40,59 root INFO Face Detection time server: 0 milliseconds
+06:24:40,59 root INFO ✅ Face Detection selesai dalam 0 miliseconds
+06:24:40,59 root INFO Feature Extractor is called.
+06:24:40,268 root INFO Feature Extraction time: 208.364052 miliseconds
+06:24:40,268 root INFO All Service Feature Extractor time server: 209 milliseconds
+06:24:40,269 root INFO ✅ Feature Extraction selesai dalam 209 miliseconds
+06:24:40,269 root INFO 🚀 Mengirim request ke 3 executor dengan ThreadPoolExecutor.
+06:24:40,272 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_1-7884-9197-23dbfdf8-3408-41dc-a422-86281cda54d8', 'data': 1}
+06:24:40,273 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_2-9198-10511-23dbfdf8-3408-41dc-a422-86281cda54d8', 'data': 1}
+06:24:40,274 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_3-10512-10518-23dbfdf8-3408-41dc-a422-86281cda54d8', 'data': 1}
+06:24:50,536 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_1-7884-9197-23dbfdf8-3408-41dc-a422-86281cda54d8', 'data': 0}
+06:24:50,536 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_2-9198-10511-23dbfdf8-3408-41dc-a422-86281cda54d8', 'data': 0}
+06:24:50,538 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_3-10512-10518-23dbfdf8-3408-41dc-a422-86281cda54d8', 'data': 0}
+06:25:57,275 root INFO 02/27/2025, 06:25:57.274766 Get IdentifyOne Request
+06:25:57,275 root INFO 🔍 Mencari executor di Redis dengan prefix: executor_pool-172.16.13.216-
+06:25:57,276 root INFO ✅ Raw Worker ID dari Redis: ['executor_pool-172.16.13.216-worker_1-executor_1-7884-9197', 'executor_pool-172.16.13.216-worker_1-executor_3-10512-10518', 'executor_pool-172.16.13.216-worker_1-executor_2-9198-10511']
+06:25:57,276 root INFO ✅ Executor ID Setelah Parsing: ['worker_1-executor_1-7884-9197', 'worker_1-executor_3-10512-10518', 'worker_1-executor_2-9198-10511']
+06:25:57,276 root INFO 🔍 Embedding kosong, melakukan Face Detection dan Feature Extraction.
+06:25:57,276 root INFO Detect Face Using MTCNN is called.
+06:25:57,276 root INFO Hash Image is same
+06:25:57,276 root INFO Face Detection time server: 0 milliseconds
+06:25:57,276 root INFO ✅ Face Detection selesai dalam 0 miliseconds
+06:25:57,277 root INFO Feature Extractor is called.
+06:25:57,526 root INFO Feature Extraction time: 248.58524300000002 miliseconds
+06:25:57,527 root INFO All Service Feature Extractor time server: 250 milliseconds
+06:25:57,527 root INFO ✅ Feature Extraction selesai dalam 251 miliseconds
+06:25:57,527 root INFO 🚀 Mengirim request ke 3 executor dengan ThreadPoolExecutor.
+06:25:57,533 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_1-7884-9197-c9827bc3-f48f-4bb9-a7d9-a8d70a6d87b2', 'data': 1}
+06:25:57,534 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_3-10512-10518-c9827bc3-f48f-4bb9-a7d9-a8d70a6d87b2', 'data': 1}
+06:25:57,535 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_2-9198-10511-c9827bc3-f48f-4bb9-a7d9-a8d70a6d87b2', 'data': 1}
+06:26:07,810 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_1-7884-9197-c9827bc3-f48f-4bb9-a7d9-a8d70a6d87b2', 'data': 0}
+06:26:07,831 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_3-10512-10518-c9827bc3-f48f-4bb9-a7d9-a8d70a6d87b2', 'data': 0}
+06:26:07,831 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_2-9198-10511-c9827bc3-f48f-4bb9-a7d9-a8d70a6d87b2', 'data': 0}
+06:27:04,309 root INFO 02/27/2025, 06:27:04.309509 Get IdentifyOne Request
+06:27:04,309 root INFO 🔍 Mencari executor di Redis dengan prefix: executor_pool-172.16.13.216-
+06:27:04,310 root INFO ✅ Raw Worker ID dari Redis: ['executor_pool-172.16.13.216-worker_1-executor_1-7884-9197', 'executor_pool-172.16.13.216-worker_1-executor_3-10512-10518', 'executor_pool-172.16.13.216-worker_1-executor_2-9198-10511']
+06:27:04,310 root INFO ✅ Executor ID Setelah Parsing: ['worker_1-executor_1-7884-9197', 'worker_1-executor_3-10512-10518', 'worker_1-executor_2-9198-10511']
+06:27:04,310 root INFO 🔍 Embedding kosong, melakukan Face Detection dan Feature Extraction.
+06:27:04,310 root INFO Detect Face Using MTCNN is called.
+06:27:04,310 root INFO Hash Image is same
+06:27:04,310 root INFO Face Detection time server: 0 milliseconds
+06:27:04,310 root INFO ✅ Face Detection selesai dalam 0 miliseconds
+06:27:04,310 root INFO Feature Extractor is called.
+06:27:04,533 root INFO Feature Extraction time: 222.135461 miliseconds
+06:27:04,533 root INFO All Service Feature Extractor time server: 223 milliseconds
+06:27:04,534 root INFO ✅ Feature Extraction selesai dalam 223 miliseconds
+06:27:04,534 root INFO 🚀 Mengirim request ke 3 executor dengan ThreadPoolExecutor.
+06:27:04,538 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_3-10512-10518-db27cd6c-9963-4835-8d6c-53f319afe527', 'data': 1}
+06:27:04,539 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_2-9198-10511-db27cd6c-9963-4835-8d6c-53f319afe527', 'data': 1}
+06:27:04,539 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_1-7884-9197-db27cd6c-9963-4835-8d6c-53f319afe527', 'data': 1}
+06:27:14,806 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_3-10512-10518-db27cd6c-9963-4835-8d6c-53f319afe527', 'data': 0}
+06:27:14,807 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_1-7884-9197-db27cd6c-9963-4835-8d6c-53f319afe527', 'data': 0}
+06:27:14,807 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_2-9198-10511-db27cd6c-9963-4835-8d6c-53f319afe527', 'data': 0}
+06:27:58,85 root INFO 02/27/2025, 06:27:58.085323 Get IdentifyOne Request
+06:27:58,85 root INFO 🔍 Mencari executor di Redis dengan prefix: executor_pool-172.16.13.216-
+06:27:58,86 root INFO ✅ Raw Worker ID dari Redis: ['executor_pool-172.16.13.216-worker_1-executor_1-7884-9197', 'executor_pool-172.16.13.216-worker_1-executor_3-10512-10518', 'executor_pool-172.16.13.216-worker_1-executor_2-9198-10511']
+06:27:58,86 root INFO ✅ Executor ID Setelah Parsing: ['worker_1-executor_1-7884-9197', 'worker_1-executor_3-10512-10518', 'worker_1-executor_2-9198-10511']
+06:27:58,86 root INFO 🔍 Embedding kosong, melakukan Face Detection dan Feature Extraction.
+06:27:58,86 root INFO Detect Face Using MTCNN is called.
+06:27:58,86 root INFO Hash Image is same
+06:27:58,86 root INFO Face Detection time server: 0 milliseconds
+06:27:58,86 root INFO ✅ Face Detection selesai dalam 0 miliseconds
+06:27:58,86 root INFO Feature Extractor is called.
+06:27:58,294 root INFO Feature Extraction time: 207.473548 miliseconds
+06:27:58,295 root INFO All Service Feature Extractor time server: 208 milliseconds
+06:27:58,295 root INFO ✅ Feature Extraction selesai dalam 208 miliseconds
+06:27:58,295 root INFO 🚀 Mengirim request ke 3 executor dengan ThreadPoolExecutor.
+06:27:58,300 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_1-7884-9197-a9727813-4c75-4ff7-9ae8-8832fce69d37', 'data': 1}
+06:27:58,300 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_3-10512-10518-a9727813-4c75-4ff7-9ae8-8832fce69d37', 'data': 1}
+06:27:58,301 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_2-9198-10511-a9727813-4c75-4ff7-9ae8-8832fce69d37', 'data': 1}
+06:28:08,559 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_2-9198-10511-a9727813-4c75-4ff7-9ae8-8832fce69d37', 'data': 0}
+06:28:08,561 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_3-10512-10518-a9727813-4c75-4ff7-9ae8-8832fce69d37', 'data': 0}
+06:28:08,566 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_1-7884-9197-a9727813-4c75-4ff7-9ae8-8832fce69d37', 'data': 0}
+06:30:15,589 root INFO 02/27/2025, 06:30:15.589500 Get IdentifyOne Request
+06:30:15,589 root INFO 🔍 Mencari executor di Redis dengan prefix: executor_pool-172.16.13.216-
+06:30:15,590 root INFO ✅ Raw Worker ID dari Redis: ['executor_pool-172.16.13.216-worker_1-executor_1-7884-9197', 'executor_pool-172.16.13.216-worker_1-executor_3-10512-10518', 'executor_pool-172.16.13.216-worker_1-executor_2-9198-10511']
+06:30:15,590 root INFO ✅ Executor ID Setelah Parsing: ['worker_1-executor_1-7884-9197', 'worker_1-executor_3-10512-10518', 'worker_1-executor_2-9198-10511']
+06:30:15,590 root INFO 🔍 Embedding kosong, melakukan Face Detection dan Feature Extraction.
+06:30:15,590 root INFO Detect Face Using MTCNN is called.
+06:30:15,590 root INFO Hash Image is same
+06:30:15,590 root INFO Face Detection time server: 0 milliseconds
+06:30:15,590 root INFO ✅ Face Detection selesai dalam 0 miliseconds
+06:30:15,590 root INFO Feature Extractor is called.
+06:30:15,806 root INFO Feature Extraction time: 215.786531 miliseconds
+06:30:15,807 root INFO All Service Feature Extractor time server: 217 milliseconds
+06:30:15,807 root INFO ✅ Feature Extraction selesai dalam 217 miliseconds
+06:30:15,807 root INFO 🚀 Mengirim request ke 3 executor dengan ThreadPoolExecutor.
+06:30:15,812 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_2-9198-10511-5fbbbd0b-34db-43e0-8a21-a4fb1e11bae8', 'data': 1}
+06:30:15,813 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_1-7884-9197-5fbbbd0b-34db-43e0-8a21-a4fb1e11bae8', 'data': 1}
+06:30:15,813 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_3-10512-10518-5fbbbd0b-34db-43e0-8a21-a4fb1e11bae8', 'data': 1}
+06:30:26,75 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_2-9198-10511-5fbbbd0b-34db-43e0-8a21-a4fb1e11bae8', 'data': 0}
+06:30:26,76 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_3-10512-10518-5fbbbd0b-34db-43e0-8a21-a4fb1e11bae8', 'data': 0}
+06:30:26,76 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_1-7884-9197-5fbbbd0b-34db-43e0-8a21-a4fb1e11bae8', 'data': 0}

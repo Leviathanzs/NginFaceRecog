@@ -1,0 +1,29 @@
+{
+    "workername": "worker_001",
+    "host": "host001.facereco.net",
+    "port": "7865",
+    "executors": [ {
+        "execname": "worker_001_exec_001",
+        "executor_id": "123456789",
+        "first_embedding_number": 0,
+        "last_embedding_number": 4999
+        }, {
+        "execname": "worker_001_exec_002",
+        "executor_id": "987654321",
+        "first_embedding_number": 5000,
+        "last_embedding_number": 9999
+        }
+        , {
+        "execname": "worker_001_exec_003",
+        "executor_id": "543219876",
+        "first_embedding_number": 10000,
+        "last_embedding_number": 14999
+        }
+        , {
+        "execname": "worker_001_exec_004",
+        "executor_id": "219876543",
+        "first_embedding_number": 15000,
+        "last_embedding_number": 19999
+        }
+    ]
+}

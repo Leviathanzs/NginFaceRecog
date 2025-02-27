@@ -1,0 +1,5 @@
+python3 -m grpc_tools.protoc --proto_path=. ./grpcproto/executor.proto --python_out=. --grpc_python_out=.
+
+python3 -m grpc_tools.protoc --proto_path=. ./grpcproto/executor.proto --python_out=. --grpc_python_out=.
+
+python3 -m grpc_tools.protoc --proto_path=. ./grpcproto/infrandriver.proto --python_out=. --grpc_python_out=.

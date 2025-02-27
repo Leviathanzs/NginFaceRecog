@@ -1,0 +1,33 @@
+05:53:18,468 root INFO 02/27/2025, 05:53:18.467951 Get RegisterUser Request
+05:53:18,468 root INFO Detect Face Using MTCNN is called.
+05:53:18,468 root INFO Hash Image is different
+05:53:18,665 root INFO MTCNN face detection time: 185.195365 miliseconds
+05:53:18,669 root INFO Face Detection time server: 201 milliseconds
+05:53:18,669 root INFO Face Detection time : 201 miliseconds
+05:53:18,669 root INFO Feature Extractor is called.
+05:53:18,891 root INFO Feature Extraction time: 220.993564 miliseconds
+05:53:18,891 root INFO All Service Feature Extractor time server: 222 milliseconds
+05:53:18,892 root INFO Feature Extractor time : 222 miliseconds
+05:53:18,892 root INFO 02/27/2025, 05:53:18.892561 Get IdentifyOne Request
+05:53:18,892 root INFO 🔍 Mencari executor di Redis dengan prefix: executor_pool-172.16.13.216-
+05:53:18,893 root INFO ✅ Raw Worker ID dari Redis: ['executor_pool-172.16.13.216-worker_1-executor_1-7884-9197', 'executor_pool-172.16.13.216-worker_1-executor_3-10512-10518', 'executor_pool-172.16.13.216-worker_1-executor_2-9198-10511']
+05:53:18,893 root INFO ✅ Executor ID Setelah Parsing: ['worker_1-executor_1-7884-9197', 'worker_1-executor_3-10512-10518', 'worker_1-executor_2-9198-10511']
+05:53:18,893 root INFO 🚀 Mengirim request ke 3 executor dengan ThreadPoolExecutor.
+05:53:18,898 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_1-7884-9197-679ed72f-e361-45fb-8beb-f88aa2e67622', 'data': 1}
+05:53:18,899 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_2-9198-10511-679ed72f-e361-45fb-8beb-f88aa2e67622', 'data': 1}
+05:53:18,899 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_3-10512-10518-679ed72f-e361-45fb-8beb-f88aa2e67622', 'data': 1}
+05:53:18,909 root INFO Channel: b'worker_1-executor_3-10512-10518-679ed72f-e361-45fb-8beb-f88aa2e67622' - Message Length: 10
+05:53:18,909 root INFO Channel: b'worker_1-executor_1-7884-9197-679ed72f-e361-45fb-8beb-f88aa2e67622' - Message Length: 10
+05:53:18,909 root INFO Channel: b'worker_1-executor_2-9198-10511-679ed72f-e361-45fb-8beb-f88aa2e67622' - Message Length: 10
+05:53:18,912 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_1-7884-9197-679ed72f-e361-45fb-8beb-f88aa2e67622', 'data': 0}
+05:53:18,912 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_3-10512-10518-679ed72f-e361-45fb-8beb-f88aa2e67622', 'data': 0}
+05:53:18,912 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_2-9198-10511-679ed72f-e361-45fb-8beb-f88aa2e67622', 'data': 0}
+05:53:18,913 root INFO Confidence Score : 0.0
+05:53:18,913 root INFO Normal Registration
+05:53:18,913 grpc._server ERROR Exception calling application: registerUserMember() missing 2 required positional arguments: 'user_member_unique_id' and 'user_member_description'
+Traceback (most recent call last):
+  File "/home/dev/face-infran-spark/venv/lib/python3.10/site-packages/grpc/_server.py", line 552, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/home/dev/face-infran-spark/driver/driver_infran_service_async.py", line 521, in RegisterUser
+    memberInfo = DBQ.registerUserMember(dbh, request.TenantID, request.Name, request.Name, request.Password)
+TypeError: registerUserMember() missing 2 required positional arguments: 'user_member_unique_id' and 'user_member_description'

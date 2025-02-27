@@ -1,0 +1,27 @@
+{
+    "workername": "worker_001",
+    "host": "host001.facereco.net",
+    "port": "7865",
+    "executors": [ {
+        "execname": "worker_001_exec_001",
+        "host": "host001.facereco.net",
+        "port": "8867",
+        "worker_number": 1
+        }, {
+        "execname": "worker_001_exec_002",
+        "host": "host001.facereco.net",
+        "port": "8868",
+        "worker_number": 2
+        }, {
+        "execname": "worker_001_exec_003",
+        "host": "host001.facereco.net",
+        "port": "8869",
+        "worker_number": 3
+        }, {
+        "execname": "worker_001_exec_004",
+        "host": "host001.facereco.net",
+        "port": "8870",
+        "worker_number": 4
+        }
+    ]
+}

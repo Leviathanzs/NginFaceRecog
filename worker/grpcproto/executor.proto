@@ -1,0 +1,45 @@
+syntax = "proto3";
+
+
+option java_multiple_files = true;
+option java_package = "io.infran.executorinfranfaceid";
+option java_outer_classname = "ExecutorInfranFaceIDProto";
+option objc_class_prefix = "RTG";
+package executorinfran;
+
+service ExecutorInfranFaceID{
+    rpc IdentifyOne(IdentifyOneRequest) returns (IdentifyOneResponse) {};
+    rpc CheckExecutor(CheckExecutorRequest) returns (CheckExecutorResponse) {};
+}
+
+message IdentifyOneRequest{
+    string TrxID = 1;
+    string TenantID = 2;
+    string Timestamp = 3;
+    string DeviceID = 4;
+    string EmbeddingID = 5;
+    repeated float EmbeddingFeature = 6;
+    bytes EmbeddingBytes = 7;
+    repeated string EmbeddingString = 8;
+}
+
+message IdentifyOneResponse{
+    string TrxID = 1;
+    string Result = 2;
+    string Status = 3;
+    string ErrCode = 4;
+    string EmbeddingID = 5;
+    string MatchEmbeddingID = 6;
+    float ConfidenceScore = 7;
+    string Message = 8;
+    string Timestamp = 9;
+}
+
+message CheckExecutorRequest{
+    string Timestamp = 1;
+}
+
+message CheckExecutorResponse{
+    string Status = 1;
+    string Timestamp = 2;
+}

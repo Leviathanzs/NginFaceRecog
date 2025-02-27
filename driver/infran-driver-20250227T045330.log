@@ -1,0 +1,26 @@
+04:55:52,924 root INFO 02/27/2025, 04:55:52.924738 Get RegisterUser Request
+04:55:52,925 root INFO Detect Face Using MTCNN is called.
+04:55:52,925 root INFO Hash Image is different
+04:55:53,92 root INFO MTCNN face detection time: 158.45050799999999 miliseconds
+04:55:53,96 root INFO Face Detection time server: 171 milliseconds
+04:55:53,96 root INFO Face Detection time : 171 miliseconds
+04:55:53,96 root INFO Feature Extractor is called.
+04:55:53,310 root INFO Feature Extraction time: 213.617983 miliseconds
+04:55:53,310 root INFO All Service Feature Extractor time server: 214 milliseconds
+04:55:53,311 root INFO Feature Extractor time : 215 miliseconds
+04:55:53,311 root INFO 02/27/2025, 04:55:53.311594 Get IdentifyOne Request
+04:55:53,312 root INFO Raw Worker ID dari Redis: []
+04:55:53,312 root INFO Executor ID Setelah Parsing: []
+04:55:53,312 root INFO Executor ID: []
+04:55:53,312 root INFO Get All Executor time : 1 miliseconds
+04:55:53,312 root INFO Memory Usage Before Thread-Pool : 512.99609375 MB
+04:55:53,313 root ERROR IdentifyOne: Tidak ada hasil dari worker (RespPoll kosong).
+04:55:53,313 root INFO Confidence Score : 0.0
+04:55:53,313 root INFO Normal Registration
+04:55:53,313 grpc._server ERROR Exception calling application: registerUserMember() missing 2 required positional arguments: 'user_member_unique_id' and 'user_member_description'
+Traceback (most recent call last):
+  File "/home/dev/face-infran-spark/venv/lib/python3.10/site-packages/grpc/_server.py", line 552, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/home/dev/face-infran-spark/driver/driver_infran_service_async.py", line 535, in RegisterUser
+    memberInfo = DBQ.registerUserMember(dbh, request.TenantID, request.Name, request.Name, request.Password)
+TypeError: registerUserMember() missing 2 required positional arguments: 'user_member_unique_id' and 'user_member_description'

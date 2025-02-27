@@ -1,0 +1,105 @@
+10:59:33,706 root INFO 02/26/2025, 10:59:33.706824 Get VerifyById Request
+10:59:33,713 root INFO Available Driver IDs: []
+10:59:33,713 root ERROR No active drivers available!
+02:16:01,596 root INFO 02/27/2025, 02:16:01.595963 Get VerifyById Request
+02:16:01,598 root INFO Available Driver IDs: ['172.16.13.216:9099']
+02:16:01,599 root INFO Selected Driver ID: 172.16.13.216:9099
+02:16:01,610 root INFO Sending request to Driver: 172.16.13.216:9099
+02:16:01,612 root ERROR GRPC Error: StatusCode.UNAVAILABLE - failed to connect to all addresses; last error: UNKNOWN: ipv4:172.16.13.216:9099: Failed to connect to remote host: Connection refused
+02:26:42,163 root INFO 02/27/2025, 02:26:42.163626 Get VerifyById Request
+02:26:42,165 root INFO Available Driver IDs: ['172.16.13.216:9099']
+02:26:42,166 root INFO Selected Driver ID: 172.16.13.216:9099
+02:26:42,166 root INFO Sending request to Driver: 172.16.13.216:9099
+02:26:42,601 root ERROR GRPC Error: StatusCode.UNKNOWN - Exception calling application: list index out of range
+02:29:03,392 root INFO 02/27/2025, 02:29:03.391914 Get VerifyByImage Request
+02:29:03,394 root INFO Available Driver IDs: ['172.16.13.216:9099']
+02:29:03,395 root INFO Selected Driver ID: 172.16.13.216:9099
+02:29:03,396 root INFO Sending request to Driver: 172.16.13.216:9099
+03:42:07,695 root INFO 02/27/2025, 03:42:07.694554 Get RegisterUser Request
+03:42:07,697 root INFO Driver ID: ['172.16.13.216:9099']
+03:42:07,698 root INFO Driver ID: 172.16.13.216:9099
+03:42:07,707 grpc._server ERROR Exception calling application: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: Nik"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"Exception calling application: Nik", grpc_status:2, created_time:"2025-02-27T03:42:07.706385544+00:00"}"
+>
+Traceback (most recent call last):
+  File "/home/dev/face-infran-spark/venv/lib/python3.10/site-packages/grpc/_server.py", line 552, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/home/dev/face-infran-spark/controller/controller_infran_service.py", line 303, in RegisterUser
+    resp = driver.RegisterUser(reqs)
+  File "/home/dev/face-infran-spark/venv/lib/python3.10/site-packages/grpc/_channel.py", line 1161, in __call__
+    return _end_unary_response_blocking(state, call, False, None)
+  File "/home/dev/face-infran-spark/venv/lib/python3.10/site-packages/grpc/_channel.py", line 1004, in _end_unary_response_blocking
+    raise _InactiveRpcError(state)  # pytype: disable=not-instantiable
+grpc._channel._InactiveRpcError: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: Nik"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"Exception calling application: Nik", grpc_status:2, created_time:"2025-02-27T03:42:07.706385544+00:00"}"
+>
+03:45:37,490 root INFO 02/27/2025, 03:45:37.490073 Get RegisterUser Request
+03:45:37,491 root INFO Driver ID: ['172.16.13.216:9099']
+03:45:37,491 root INFO Driver ID: 172.16.13.216:9099
+03:45:37,495 grpc._server ERROR Exception calling application: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: Nik"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-02-27T03:45:37.495205442+00:00", grpc_status:2, grpc_message:"Exception calling application: Nik"}"
+>
+Traceback (most recent call last):
+  File "/home/dev/face-infran-spark/venv/lib/python3.10/site-packages/grpc/_server.py", line 552, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/home/dev/face-infran-spark/controller/controller_infran_service.py", line 303, in RegisterUser
+    logging.info(f"Request data: {reqs}")
+  File "/home/dev/face-infran-spark/venv/lib/python3.10/site-packages/grpc/_channel.py", line 1161, in __call__
+    return _end_unary_response_blocking(state, call, False, None)
+  File "/home/dev/face-infran-spark/venv/lib/python3.10/site-packages/grpc/_channel.py", line 1004, in _end_unary_response_blocking
+    raise _InactiveRpcError(state)  # pytype: disable=not-instantiable
+grpc._channel._InactiveRpcError: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: Nik"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-02-27T03:45:37.495205442+00:00", grpc_status:2, grpc_message:"Exception calling application: Nik"}"
+>
+03:47:02,556 root INFO 02/27/2025, 03:47:02.556437 Get RegisterUser Request
+03:47:02,559 root INFO Driver ID: ['172.16.13.216:9099']
+03:47:02,559 root INFO Driver ID: 172.16.13.216:9099
+03:47:02,567 grpc._server ERROR Exception calling application: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: Nik"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"Exception calling application: Nik", grpc_status:2, created_time:"2025-02-27T03:47:02.567114369+00:00"}"
+>
+Traceback (most recent call last):
+  File "/home/dev/face-infran-spark/venv/lib/python3.10/site-packages/grpc/_server.py", line 552, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/home/dev/face-infran-spark/controller/controller_infran_service.py", line 303, in RegisterUser
+    resp_delete = self.DeleteUser(infrandriver_pb2.DeleteUserRequest(TrxID=TrxID, TenantID=TenantID,
+  File "/home/dev/face-infran-spark/venv/lib/python3.10/site-packages/grpc/_channel.py", line 1161, in __call__
+    return _end_unary_response_blocking(state, call, False, None)
+  File "/home/dev/face-infran-spark/venv/lib/python3.10/site-packages/grpc/_channel.py", line 1004, in _end_unary_response_blocking
+    raise _InactiveRpcError(state)  # pytype: disable=not-instantiable
+grpc._channel._InactiveRpcError: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: Nik"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"Exception calling application: Nik", grpc_status:2, created_time:"2025-02-27T03:47:02.567114369+00:00"}"
+>
+03:50:07,627 root INFO 02/27/2025, 03:50:07.627373 Get RegisterUser Request
+03:50:07,630 root INFO Driver ID: ['172.16.13.216:9099']
+03:50:07,630 root INFO Driver ID: 172.16.13.216:9099
+03:50:07,637 grpc._server ERROR Exception calling application: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: Nik"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-02-27T03:50:07.637367227+00:00", grpc_status:2, grpc_message:"Exception calling application: Nik"}"
+>
+Traceback (most recent call last):
+  File "/home/dev/face-infran-spark/venv/lib/python3.10/site-packages/grpc/_server.py", line 552, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/home/dev/face-infran-spark/controller/controller_infran_service.py", line 303, in RegisterUser
+    resp_delete = self.DeleteUser(infrandriver_pb2.DeleteUserRequest(TrxID=TrxID, TenantID=TenantID,
+  File "/home/dev/face-infran-spark/venv/lib/python3.10/site-packages/grpc/_channel.py", line 1161, in __call__
+    return _end_unary_response_blocking(state, call, False, None)
+  File "/home/dev/face-infran-spark/venv/lib/python3.10/site-packages/grpc/_channel.py", line 1004, in _end_unary_response_blocking
+    raise _InactiveRpcError(state)  # pytype: disable=not-instantiable
+grpc._channel._InactiveRpcError: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: Nik"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2025-02-27T03:50:07.637367227+00:00", grpc_status:2, grpc_message:"Exception calling application: Nik"}"
+>

@@ -1,0 +1,24 @@
+06:14:33,534 root INFO 02/27/2025, 06:14:33.534423 Get IdentifyOne Request
+06:14:33,534 root INFO 🔍 Mencari executor di Redis dengan prefix: executor_pool-172.16.13.216-
+06:14:33,535 root INFO ✅ Raw Worker ID dari Redis: ['executor_pool-172.16.13.216-worker_1-executor_1-7884-9197', 'executor_pool-172.16.13.216-worker_1-executor_3-10512-10518', 'executor_pool-172.16.13.216-worker_1-executor_2-9198-10511']
+06:14:33,535 root INFO ✅ Executor ID Setelah Parsing: ['worker_1-executor_1-7884-9197', 'worker_1-executor_3-10512-10518', 'worker_1-executor_2-9198-10511']
+06:14:33,535 root INFO 🔍 Embedding kosong, melakukan Face Detection dan Feature Extraction.
+06:14:33,535 root INFO Detect Face Using MTCNN is called.
+06:14:33,535 root INFO Hash Image is different
+06:14:33,715 root INFO MTCNN face detection time: 170.406704 miliseconds
+06:14:33,718 root INFO Face Detection time server: 183 milliseconds
+06:14:33,718 root INFO ✅ Face Detection selesai dalam 183 miliseconds
+06:14:33,718 root INFO Feature Extractor is called.
+06:14:33,934 root INFO Feature Extraction time: 215.16981900000002 miliseconds
+06:14:33,934 root INFO All Service Feature Extractor time server: 216 milliseconds
+06:14:33,934 root INFO ✅ Feature Extraction selesai dalam 216 miliseconds
+06:14:33,934 root INFO 🚀 Mengirim request ke 3 executor dengan ThreadPoolExecutor.
+06:14:33,938 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_3-10512-10518-e42628d1-58f9-40ef-a76b-32f75910e022', 'data': 1}
+06:14:33,939 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_1-7884-9197-e42628d1-58f9-40ef-a76b-32f75910e022', 'data': 1}
+06:14:33,940 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_2-9198-10511-e42628d1-58f9-40ef-a76b-32f75910e022', 'data': 1}
+06:14:33,946 root INFO Channel: b'worker_1-executor_3-10512-10518-e42628d1-58f9-40ef-a76b-32f75910e022' - Message Length: 10
+06:14:33,946 root INFO Channel: b'worker_1-executor_1-7884-9197-e42628d1-58f9-40ef-a76b-32f75910e022' - Message Length: 10
+06:14:33,946 root INFO Channel: b'worker_1-executor_2-9198-10511-e42628d1-58f9-40ef-a76b-32f75910e022' - Message Length: 10
+06:14:33,948 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_3-10512-10518-e42628d1-58f9-40ef-a76b-32f75910e022', 'data': 0}
+06:14:33,949 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_1-7884-9197-e42628d1-58f9-40ef-a76b-32f75910e022', 'data': 0}
+06:14:33,949 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_2-9198-10511-e42628d1-58f9-40ef-a76b-32f75910e022', 'data': 0}

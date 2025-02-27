@@ -1,0 +1,132 @@
+syntax = "proto3";
+
+
+option java_multiple_files = true;
+option java_package = "io.infran.driverinfranfaceid";
+option java_outer_classname = "DriverInfranFaceIDProto";
+option objc_class_prefix = "RTG";
+package driverinfran;
+
+service DriverInfranFaceID{
+    rpc IdentifyOne(IdentifyOneRequest) returns (IdentifyOneResponse) {}
+    rpc IdentifyMany(IdentifyManyRequest) returns (IdentifyManyResponse) {}
+    rpc RegisterUser(RegisterUserRequest) returns (RegisterUserResponse) {}
+    rpc DeleteUser(DeleteUserRequest) returns (DeleteUserResponse) {}
+    rpc VerifyById(VerifyByIdRequest) returns (VerifyResponse) {}
+    rpc VerifyByImage(VerifyByImageRequest) returns (VerifyResponse) {}
+}
+
+message VerifyByIdRequest{
+    string TrxID = 1;
+    string ImgData = 2;
+    string UserID = 3;
+}
+
+message VerifyByImageRequest{
+    string TrxID = 1;
+    string ImgData1 = 2;
+    string ImgData2 = 3;
+}
+
+message VerifyResponse{
+    string TrxID = 1;
+    string ErrCode = 2;
+    string Message = 3;
+    string Timestamp = 4;
+    float ConfidenceScore = 5;
+}
+
+message IdentifyOneRequest{
+    string TrxID = 1;
+    string TenantID = 2;
+    string Timestamp = 3;
+    string DeviceID = 4;
+    string ImgData = 5;
+    int32 FaceDetector = 6;
+    string EmbeddingID = 7;
+    repeated float EmbeddingFeature = 8;
+    bytes EmbeddingBytes = 9;
+}
+
+message IdentifyOneResponse{
+    string TrxID = 1;
+    string Result = 2;
+    string Status = 3;
+    string ErrCode = 4;
+    string EmbeddingID = 5;
+    string MatchEmbeddingID = 6;
+    float ConfidenceScore = 7;
+    string Message = 8;
+    string Timestamp = 9;
+}
+
+message IdentifyManyRequest{
+    string TrxID = 1;
+    string TenantID = 2;
+    string Timestamp = 3;
+    string DeviceID = 4;
+    string ImgData = 5;
+    int32 FaceDetector = 6;
+    int32 NumResult = 7;
+}
+
+message IdentifyManyResponse{
+    string TrxID = 1;
+    string Result = 2;
+    string Status = 3;
+    string ErrCode = 4;
+    string EmbeddingID = 5;
+    repeated string MatchEmbeddingID = 6;
+    repeated float ConfidenceScore = 7;
+    string Message = 8;
+    string Timestamp = 9;
+    repeated IdentifyResult MatchingResult = 10;
+}
+message IdentifyResult{
+    string MatchEmbeddingID = 1;
+    string ConfidenceScore = 2;
+}
+
+message RegisterUserRequest{
+    string TrxID = 1;
+    string TenantID = 2;
+    string Timestamp = 3;
+    string DeviceID = 4;
+    string ImgData = 5;
+    int32 FaceDetector = 6;
+    string Name = 7;
+    string Password = 8;
+    string UserID = 9;
+    string Description = 10;
+    string rkey = 11;
+}
+
+message RegisterUserResponse{
+    string TrxID = 1;
+    string Result = 2;
+    string Status = 3;
+    string ErrCode = 4;
+    string UserID = 5;
+    string UserUniqueId = 6;
+    string Message = 7;
+    string Timestamp = 8;
+}
+
+message DeleteUserRequest{
+    string TrxID = 1;
+    string TenantID = 2;
+    string Timestamp = 3;
+    string DeviceID = 4;
+    string UserID = 5;
+    string rkey = 6;
+}
+
+message DeleteUserResponse{
+    string TrxID = 1;
+    string Result = 2;
+    string Status = 3;
+    string ErrCode = 4;
+    string Message = 5;
+    string Timestamp = 6;
+    string rkey = 7;
+}

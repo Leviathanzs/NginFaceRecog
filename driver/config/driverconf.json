@@ -1,0 +1,16 @@
+{
+    "workers": [ {
+        "workername": "worker_001",
+        "host": "host001.facereco.net",
+        "port": "7865"
+        }, {
+        "workername": "worker_002",
+        "host": "host002.facereco.net",
+        "port": "7865"
+        }, {
+        "workername": "worker_003",
+        "host": "host003.facereco.net",
+        "port": "7865"
+        }
+    ]
+}

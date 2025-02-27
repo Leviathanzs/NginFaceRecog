@@ -1,0 +1,89 @@
+06:32:22,52 root INFO 02/27/2025, 06:32:22.052146 Get IdentifyOne Request
+06:32:22,52 root INFO Detect Face Using MTCNN is called.
+06:32:22,52 root INFO Hash Image is different
+06:32:22,232 root INFO MTCNN face detection time: 169.84101800000002 miliseconds
+06:32:22,235 root INFO Face Detection time server: 183 milliseconds
+06:32:22,235 root INFO Face Detection time : 183 miliseconds
+06:32:22,235 root INFO Feature Extractor is called.
+06:32:22,472 root INFO Feature Extraction time: 236.54478 miliseconds
+06:32:22,472 root INFO All Service Feature Extractor time server: 237 milliseconds
+06:32:22,473 root INFO Feature Extractor time : 238 miliseconds
+06:32:22,474 root INFO Executor ID: ['worker_1-executor_1-7884-9197', 'worker_1-executor_3-10512-10518', 'worker_1-executor_2-9198-10511']
+06:32:22,474 root INFO Get All Executor time : 1 miliseconds
+06:32:22,474 root INFO Memory Usage Before Thread-Pool : 527.1171875 MB
+06:32:22,477 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_1-7884-9197-87249aa9-b52e-4ffd-9281-d3d04f4983b4', 'data': 1}
+06:32:22,478 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_2-9198-10511-87249aa9-b52e-4ffd-9281-d3d04f4983b4', 'data': 1}
+06:32:22,480 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_3-10512-10518-87249aa9-b52e-4ffd-9281-d3d04f4983b4', 'data': 1}
+06:32:22,488 root INFO Channel: b'worker_1-executor_2-9198-10511-87249aa9-b52e-4ffd-9281-d3d04f4983b4' - Message Length: 10
+06:32:22,488 root INFO Channel: b'worker_1-executor_1-7884-9197-87249aa9-b52e-4ffd-9281-d3d04f4983b4' - Message Length: 10
+06:32:22,489 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_2-9198-10511-87249aa9-b52e-4ffd-9281-d3d04f4983b4', 'data': 0}
+06:32:22,489 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_1-7884-9197-87249aa9-b52e-4ffd-9281-d3d04f4983b4', 'data': 0}
+06:32:22,490 root INFO Memory Usage Thread-Pool : 527.1171875 MB
+06:32:22,490 root INFO Memory Usage Thread-Pool : 527.38671875 MB
+06:32:22,490 root INFO Channel: b'worker_1-executor_3-10512-10518-87249aa9-b52e-4ffd-9281-d3d04f4983b4' - Message Length: 10
+06:32:22,493 root INFO Memory Usage Thread-Pool : 527.38671875 MB
+06:32:22,493 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_3-10512-10518-87249aa9-b52e-4ffd-9281-d3d04f4983b4', 'data': 0}
+06:32:22,494 root INFO Concurent All Executor time : 20 miliseconds
+06:32:22,494 root INFO 02/27/2025, 06:32:22.494128 IdentifyOne Request Finished
+
+06:32:22,494 root INFO ------------------------------------------------------------------------------
+06:32:22,494 root INFO 
+
+06:32:22,494 root INFO Memory Usage: 527.66796875 MB
+06:32:54,287 root INFO 02/27/2025, 06:32:54.287682 Get IdentifyMany Request
+06:32:54,287 root INFO Detect Face Using MTCNN is called.
+06:32:54,288 root INFO Hash Image is same
+06:32:54,288 root INFO Face Detection time server: 0 milliseconds
+06:32:54,288 root INFO Face Detection time : 0 miliseconds
+06:32:54,288 root INFO Feature Extractor is called.
+06:32:54,495 root INFO Feature Extraction time: 207.361997 miliseconds
+06:32:54,496 root INFO All Service Feature Extractor time server: 208 milliseconds
+06:32:54,496 root INFO Feature Extractor time : 208 miliseconds
+06:32:54,497 root INFO Executor ID: ['worker_1-executor_1-7884-9197', 'worker_1-executor_3-10512-10518', 'worker_1-executor_2-9198-10511']
+06:32:54,497 root INFO Get All Executor time : 1 miliseconds
+06:32:54,500 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_1-7884-9197-dbffcda2-5914-45a2-9a73-280b1dd76dec', 'data': 1}
+06:32:54,501 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_3-10512-10518-dbffcda2-5914-45a2-9a73-280b1dd76dec', 'data': 1}
+06:32:54,501 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_2-9198-10511-dbffcda2-5914-45a2-9a73-280b1dd76dec', 'data': 1}
+06:32:54,504 root INFO Channel: b'worker_1-executor_1-7884-9197-dbffcda2-5914-45a2-9a73-280b1dd76dec' - Message Length: 8
+06:32:54,504 root INFO Channel: b'worker_1-executor_3-10512-10518-dbffcda2-5914-45a2-9a73-280b1dd76dec' - Message Length: 8
+06:32:54,504 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_1-7884-9197-dbffcda2-5914-45a2-9a73-280b1dd76dec', 'data': 0}
+06:32:54,504 root INFO Channel: b'worker_1-executor_2-9198-10511-dbffcda2-5914-45a2-9a73-280b1dd76dec' - Message Length: 8
+06:32:54,505 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_3-10512-10518-dbffcda2-5914-45a2-9a73-280b1dd76dec', 'data': 0}
+06:32:54,508 root INFO Concurent All Executor time : 12 miliseconds
+06:32:54,508 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_2-9198-10511-dbffcda2-5914-45a2-9a73-280b1dd76dec', 'data': 0}
+06:32:54,508 root INFO 02/27/2025, 06:32:54.508955 IdentifyOne Request Finished
+
+06:32:54,509 root INFO ------------------------------------------------------------------------------
+06:32:54,509 root INFO 
+
+06:33:09,187 root INFO 02/27/2025, 06:33:09.187628 Get IdentifyOne Request
+06:33:09,187 root INFO Detect Face Using MTCNN is called.
+06:33:09,188 root INFO Hash Image is same
+06:33:09,188 root INFO Face Detection time server: 0 milliseconds
+06:33:09,188 root INFO Face Detection time : 0 miliseconds
+06:33:09,188 root INFO Feature Extractor is called.
+06:33:09,400 root INFO Feature Extraction time: 211.679126 miliseconds
+06:33:09,400 root INFO All Service Feature Extractor time server: 212 milliseconds
+06:33:09,401 root INFO Feature Extractor time : 213 miliseconds
+06:33:09,402 root INFO Executor ID: ['worker_1-executor_1-7884-9197', 'worker_1-executor_3-10512-10518', 'worker_1-executor_2-9198-10511']
+06:33:09,402 root INFO Get All Executor time : 1 miliseconds
+06:33:09,402 root INFO Memory Usage Before Thread-Pool : 528.76171875 MB
+06:33:09,406 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_3-10512-10518-d102c579-8a65-479c-8679-d47c9e91d657', 'data': 1}
+06:33:09,407 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_2-9198-10511-d102c579-8a65-479c-8679-d47c9e91d657', 'data': 1}
+06:33:09,408 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_1-7884-9197-d102c579-8a65-479c-8679-d47c9e91d657', 'data': 1}
+06:33:09,410 root INFO Channel: b'worker_1-executor_3-10512-10518-d102c579-8a65-479c-8679-d47c9e91d657' - Message Length: 10
+06:33:09,411 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_3-10512-10518-d102c579-8a65-479c-8679-d47c9e91d657', 'data': 0}
+06:33:09,411 root INFO Memory Usage Thread-Pool : 528.76171875 MB
+06:33:09,412 root INFO Channel: b'worker_1-executor_1-7884-9197-d102c579-8a65-479c-8679-d47c9e91d657' - Message Length: 10
+06:33:09,412 root INFO Channel: b'worker_1-executor_2-9198-10511-d102c579-8a65-479c-8679-d47c9e91d657' - Message Length: 10
+06:33:09,414 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_2-9198-10511-d102c579-8a65-479c-8679-d47c9e91d657', 'data': 0}
+06:33:09,414 root INFO Memory Usage Thread-Pool : 528.76953125 MB
+06:33:09,414 root INFO Memory Usage Thread-Pool : 528.7890625 MB
+06:33:09,415 root INFO Redis : {'type': 'unsubscribe', 'pattern': None, 'channel': b'worker_1-executor_1-7884-9197-d102c579-8a65-479c-8679-d47c9e91d657', 'data': 0}
+06:33:09,415 root INFO Concurent All Executor time : 13 miliseconds
+06:33:09,415 root INFO 02/27/2025, 06:33:09.415440 IdentifyOne Request Finished
+
+06:33:09,415 root INFO ------------------------------------------------------------------------------
+06:33:09,415 root INFO 
+
+06:33:09,415 root INFO Memory Usage: 528.79296875 MB

@@ -1,0 +1,24 @@
+05:07:38,723 root INFO Load All Embedding
+05:07:38,724 root INFO Loading Model to cache
+05:07:38,725 root INFO Local Predefind embedding size : 1
+05:07:38,725 root INFO executor_1 - [*] load from memory init_embeddings(): Done in 0.0015895366668701172 seconds
+05:07:38,732 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_1-7884-9197', 'data': 1}
+05:07:38,732 root INFO executor_1 - Message Listener is on
+05:07:38,732 root INFO executor_1 - Mendaftarkan executor ke Redis di pool executor_pool-172.17.0.3
+05:07:38,732 root INFO executor_1 - Executor Pool Notifier is on
+05:07:40,731 root INFO Load All Embedding
+05:07:40,732 root INFO Loading Model to cache
+05:07:40,733 root INFO Local Predefind embedding size : 1
+05:07:40,733 root INFO executor_2 - [*] load from memory init_embeddings(): Done in 0.002366304397583008 seconds
+05:07:40,741 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_2-9198-10511', 'data': 1}
+05:07:40,742 root INFO executor_2 - Message Listener is on
+05:07:40,742 root INFO executor_2 - Mendaftarkan executor ke Redis di pool executor_pool-172.17.0.3
+05:07:40,742 root INFO executor_2 - Executor Pool Notifier is on
+05:07:42,734 root INFO Load All Embedding
+05:07:42,735 root INFO Loading Model to cache
+05:07:42,736 root INFO Local Predefind embedding size : 1
+05:07:42,736 root INFO executor_3 - [*] load from memory init_embeddings(): Done in 0.0015952587127685547 seconds
+05:07:42,742 root INFO executor_3 - Message Listener is on
+05:07:42,742 root INFO Redis : {'type': 'subscribe', 'pattern': None, 'channel': b'worker_1-executor_3-10512-10518', 'data': 1}
+05:07:42,742 root INFO executor_3 - Mendaftarkan executor ke Redis di pool executor_pool-172.17.0.3
+05:07:42,743 root INFO executor_3 - Executor Pool Notifier is on
