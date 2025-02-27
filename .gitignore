@@ -4,3 +4,4 @@ __pycache__/
 *.pyc
 *.pyo
 .DS_Store
+feature_exctraction/checkpoint/*.pth
